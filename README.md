@@ -12,3 +12,5 @@ Simple graphical scripts in Processing.
 * Simulations
     * Reaction diffusion
         * [Reaction diffusion](./Simulations/Reaction_diffusion/Reaction_diffusion.pde)
+    * Reaction diffusion v2
+        * [Reaction diffusion v2](./Simulations/Reaction_diffusion_v2/Reaction_diffusion_v2.pde)
