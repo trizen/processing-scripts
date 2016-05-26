@@ -51,7 +51,7 @@ color hsv2rgb(float h, float s, float v) {
   float c = v * s;
   float x = c * (1 - abs(((h/60) % 2) - 1));
   float m = v - c;
- 
+
   float r, g, b;
   if (h < 60) {
     r = c;
@@ -78,11 +78,11 @@ color hsv2rgb(float h, float s, float v) {
     g = 0;
     b = x;
   }
- 
+
   int ri = round((r + m) * 255);
   int gi = round((g + m) * 255);
   int bi = round((b + m) * 255);
- 
+
   return color(ri, gi, bi);
 }
 
@@ -124,7 +124,7 @@ void draw() {
 
       int pos = i + j * width;
       //pixels[pos] = color((a-b)*255);
-      pixels[pos] = hsv2rgb(((a-b)*(i+j)) % 360, a, a-b);
+      pixels[pos] = hsv2rgb((a*(i+j)) % 360, a, a-b);
     }
   }
   updatePixels();
