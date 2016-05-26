@@ -86,10 +86,20 @@ color hsv2rgb(float h, float s, float v) {
   return color(ri, gi, bi);
 }
 
+int count    = 0;
+int interval = 10;
+
 void draw() {
   //println(frameRate);
 
-  loadPixels();
+  boolean update =
+    ++count % interval == 0;
+
+  if (update) {
+    count = 0;
+    loadPixels();
+  }
+
   for (int i = 1; i < height-1; i++) {
 
     Cell[] above  = grid[i-1];
@@ -142,8 +152,13 @@ void draw() {
       spot.a = constrain(spot.a, 0, 1);
       spot.b = constrain(spot.b, 0, 1);
 
-      pixels[pos + j] = hsv2rgb((a*(i+j)) % 360, a, a-b);
+      if (update) {
+        pixels[pos + j] = hsv2rgb((a*(i+j)) % 360, a, a-b);
+      }
     }
   }
-  updatePixels();
+
+  if (update) {
+    updatePixels();
+  }
 }
