@@ -11,7 +11,7 @@
 Cell[][] grid;
 
 void setup() {
-  size(300, 300);
+  size(500, 500);
   grid = new Cell[width][height];
 
   for (int i = 0; i < width; i++) {
@@ -124,7 +124,7 @@ void draw() {
 
       int pos = i + j * width;
       //pixels[pos] = color((a-b)*255);
-      pixels[pos] = hsv2rgb((a-b)*(i+j), a, a-b);
+      pixels[pos] = hsv2rgb(((a-b)*(i+j)) % 360, a, a-b);
     }
   }
   updatePixels();
