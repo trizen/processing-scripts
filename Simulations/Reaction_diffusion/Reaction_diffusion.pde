@@ -124,7 +124,7 @@ void draw() {
 
       int pos = i + j * width;
       //pixels[pos] = color((a-b)*255);
-      pixels[pos] = hsv2rgb((a-b)*(i+j), 1, a-b);
+      pixels[pos] = hsv2rgb((a-b)*(i+j), a, a-b);
     }
   }
   updatePixels();
