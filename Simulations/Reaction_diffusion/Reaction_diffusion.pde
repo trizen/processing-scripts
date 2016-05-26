@@ -24,8 +24,8 @@ void setup() {
     int startx = int(random(20, width-20));
     int starty = int(random(20, height-20));
 
-    for (int i = startx; i < startx+10; i++) {
-      for (int j = starty; j < starty+10; j ++) {
+    for (int i = startx; i < startx+int(random(5, 15)); i++) {
+      for (int j = starty; j < starty+int(random(5, 15)); j ++) {
         grid[i][j] = new Cell(1, 1);
       }
     }
