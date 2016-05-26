@@ -87,7 +87,7 @@ color hsv2rgb(float h, float s, float v) {
 }
 
 void draw() {
-  println(frameRate);
+  //println(frameRate);
 
   loadPixels();
   for (int i = 1; i < height-1; i++) {
@@ -105,15 +105,13 @@ void draw() {
       float a = spot.a;
       float b = spot.b;
 
-      
-      
       Cell left  = here[j-1];
       Cell right = here[j+1];
 
       Cell up       = above[j];
       Cell up_left  = above[j-1];
       Cell up_right = above[j+1];
-      
+
       Cell down       = bellow[j];
       Cell down_left  = bellow[j-1];
       Cell down_right = bellow[j+1];
@@ -144,7 +142,7 @@ void draw() {
       spot.a = constrain(spot.a, 0, 1);
       spot.b = constrain(spot.b, 0, 1);
 
-      pixels[j + pos] = hsv2rgb((a*(i+j)) % 360, a, a-b);
+      pixels[pos + j] = hsv2rgb((a*(i+j)) % 360, a, a-b);
     }
   }
   updatePixels();
