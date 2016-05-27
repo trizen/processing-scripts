@@ -92,8 +92,7 @@ int interval = 10;
 void draw() {
   //println(frameRate);
 
-  boolean update =
-    ++count % interval == 0;
+  boolean update = ++count >= interval;
 
   if (update) {
     count = 0;
