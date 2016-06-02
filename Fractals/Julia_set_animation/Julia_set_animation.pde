@@ -20,12 +20,18 @@ float ymax = 0.02;
 float xiter = -random(xmin, xmax);
 float yiter = +random(ymin, ymax);
 
+float zoom = 1.0;
+float moveX = 0.0;
+float moveY = 0.0;
+
 void draw() {
 
   for (int x = 0; x < width; x++) {
     for (int y = 0; y < height; y++) {
-      zx = 1.5 * (x - width / 2) / (0.5 * width);
-      zy = (y - height / 2) / (0.5 * height);
+
+      zx = 3.0/2.0 * (2*x - width) / (width * zoom) + moveX;
+      zy = 1.0/1.0 * (2*y - height) / (height * zoom) + moveY;
+
       float i = maxIter;
       while (zx * zx + zy * zy < 4 && i > 0) {
         float tmp = zx * zx - zy * zy + cX;
