@@ -1,5 +1,5 @@
 // Random animation of Julia sets
-// Daniel "Trizen" Șuteu
+// Daniel Șuteu
 // https://en.wikipedia.org/wiki/Julia_set
 
 void setup() {
