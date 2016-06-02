@@ -9,6 +9,8 @@ Simple graphical scripts in Processing.
         * [Barnsley fern](./Fractals/Barnsley_fern/Barnsley_fern.pde)
     * Julia set
         * [Julia set](./Fractals/Julia_set/Julia_set.pde)
+    * Julia set animation
+        * [Julia set animation](./Fractals/Julia_set_animation/Julia_set_animation.pde)
 * Simulations
     * Reaction diffusion
         * [Reaction diffusion](./Simulations/Reaction_diffusion/Reaction_diffusion.pde)
