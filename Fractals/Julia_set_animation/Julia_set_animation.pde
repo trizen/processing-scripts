@@ -1,4 +1,4 @@
-// Random animation of the Julia set
+// Random animation of Julia sets
 // Daniel "Trizen" Șuteu
 // https://en.wikipedia.org/wiki/Julia_set
 
