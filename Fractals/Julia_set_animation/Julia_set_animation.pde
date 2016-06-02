@@ -1,5 +1,6 @@
-// Animation of the Julia set
-// See: https://en.wikipedia.org/wiki/Julia_set
+// Random animation of the Julia set
+// Daniel "Trizen" Șuteu
+// https://en.wikipedia.org/wiki/Julia_set
 
 void setup() {
   size(640, 480);
