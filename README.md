@@ -12,6 +12,8 @@ Simple graphical scripts in Processing.
     * Julia set animation
         * [Julia set animation](./Fractals/Julia_set_animation/Julia_set_animation.pde)
 * Simulations
+    * Brownian tree
+        * [Brownian tree](./Simulations/Brownian_tree/Brownian_tree.pde)
     * Reaction diffusion
         * [Reaction diffusion](./Simulations/Reaction_diffusion/Reaction_diffusion.pde)
     * Reaction diffusion v2
