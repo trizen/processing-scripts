@@ -22,17 +22,17 @@ void draw() {
     while (true) {
       int xp = x + floor(random(-1, 2));
       int yp = y + floor(random(-1, 2));
-      boolean iscontained = (
+      boolean isContained = (
         0 <= xp && xp < width  &&
         0 <= yp && yp < height
       );
-      if (iscontained && !isTaken[xp][yp]) {
+      if (isContained && !isTaken[xp][yp]) {
         x = xp;
         y = yp;
         continue;
       }
       else {
-        if (SIDESTICK || (iscontained && isTaken[xp][yp])) {
+        if (SIDESTICK || (isContained && isTaken[xp][yp])) {
           isTaken[x][y] = true;
           set(x, y, #000000);
         }
