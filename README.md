@@ -11,6 +11,8 @@ Simple graphical scripts in Processing.
         * [Julia set](./Fractals/Julia_set/Julia_set.pde)
     * Julia set animation
         * [Julia set animation](./Fractals/Julia_set_animation/Julia_set_animation.pde)
+    * Pythagoras tree
+        * [Pythagoras tree](./Fractals/Pythagoras_tree/Pythagoras_tree.pde)
 * Simulations
     * Brownian tree
         * [Brownian tree](./Simulations/Brownian_tree/Brownian_tree.pde)
