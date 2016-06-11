@@ -1,4 +1,3 @@
-
 // See: http://rosettacode.org/wiki/Julia_set
 //      https://en.wikipedia.org/wiki/Julia_set
 
@@ -23,7 +22,7 @@ void draw() {
         zx = tmp;
         i -= 1;
       }
-      color c = hsv2rgb(i / maxIter * 360, 1, i > 1 ? 1 : 0);
+      color c = hsv2rgb((maxIter - i) / maxIter * 360, 1, i > 1 ? 1 : 0);
       set(x, y, c);
     }
   }
