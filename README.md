@@ -13,6 +13,8 @@ Simple graphical scripts in Processing.
         * [Julia set animation](./Fractals/Julia_set_animation/Julia_set_animation.pde)
     * Pythagoras tree
         * [Pythagoras tree](./Fractals/Pythagoras_tree/Pythagoras_tree.pde)
+    * Sierpinski triangle from circles
+        * [Sierpinski triangle from circles](./Fractals/Sierpinski_triangle_from_circles/Sierpinski_triangle_from_circles.pde)
 * Simulations
     * Brownian tree
         * [Brownian tree](./Simulations/Brownian_tree/Brownian_tree.pde)
